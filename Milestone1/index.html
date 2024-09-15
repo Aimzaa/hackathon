@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Static Resume Builder</h1>
+    <form id="resumeForm">
+        <img src="profile.jpg" alt="Profile Picture" class="profile-picture">
+        
+        <fieldset>
+            <legend class="toggle-heading">Personal Information</legend>
+            <div class="content">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" required><br>
+
+                <label for="contact">Contact:</label>
+                <input type="tel" id="Phone" name="Phone" required>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend class="toggle-heading">Education</legend>
+            <div class="content">
+                <label for="education">Education</label>
+                <textarea id="education" name="education" rows="4" required></textarea><br>
+            </div>
+        </fieldset>
+        
+        <fieldset>
+            <legend class="toggle-heading">Skills</legend>
+            <div class="content">
+                <label for="skills">Skills</label>
+                <textarea id="skills" name="skills" rows="4" required></textarea><br>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend class="toggle-heading">Work Experience</legend>
+            <div class="content">
+                <label for="experience">Work Experience</label>
+                <textarea id="experience" name="experience" rows="4" required></textarea><br>
+            </div>
+        </fieldset>
+        
+        <p>Created by: <span class="creator-name">Aiman Khan</span></p>
+    </form> 
+
+    <script src="script.js"></script>
+</body>
+</html>
